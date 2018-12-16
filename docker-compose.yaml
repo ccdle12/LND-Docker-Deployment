@@ -10,6 +10,12 @@ services:
             - BITCOIN_RPCPASS=$BITCOIN_RPCPASS
             - LND_ALIAS=$LND_ALIAS
             - EXTERNAL_IP=$EXTERNAL_IP
+        ports:
+            - 9735:9735
+            - 10009:10009
+            - 8080:8080
+            - 8332:8332
+            - 8333:8333
         volumes:
             # Mount the bitcoin config to the container.
             - ./configs/bitcoin.conf:/root/.bitcoin/bitcoin.conf
