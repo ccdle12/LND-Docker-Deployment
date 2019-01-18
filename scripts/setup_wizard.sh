@@ -151,6 +151,7 @@ bitcoin.node=bitcoind
 bitcoin.active=1
 rpclisten=127.0.0.1:10008
 rpclisten=0.0.0.0:10009
+restlisten=0.0.0.0:8080
 tlsextraip=$externalip
 EOF
 
