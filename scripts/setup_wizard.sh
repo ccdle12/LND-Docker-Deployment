@@ -161,6 +161,16 @@ else
     echo "bitcoin.mainnet=1" >> ./configs/lnd.conf
 fi
 
+# Set the lncli.sh script.
+cat <<EOF > ./lncli.sh
+#!/bin/bash
+
+# Command line to access lightning-cli
+docker exec -ti bitcoin_node /bin/bash -c "lncli --tlscertpath=/root/.lnd/tls.cert --macaroonpath=/root/.lnd/data/chain/bitcoin/$network/admin.macaroon \$@"
+EOF
+
+chmod a+x ./lncli.sh
+
 # Run the docker-compose file.
 echo "[NOW RUNNING THE DOCKER-COMPOSE FILE...]"
 make
