@@ -1,4 +1,6 @@
 .env
 *.swp
 *.swo
+configs/bitcoin.conf
+configs/lnd.conf
 
