@@ -4,7 +4,6 @@ services:
         container_name: bitcoin_node
         command: /entry-point.sh
         build: ./
-        tty: true
         environment:
             - BITCOIN_RPCUSER=$BITCOIN_RPCUSER
             - BITCOIN_RPCPASS=$BITCOIN_RPCPASS

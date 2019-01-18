@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Run bitcoind.
-/bitcoin/src/bitcoind
+/bitcoin/src/bitcoind &
 
 # Run lnd.
 lnd &
