@@ -61,15 +61,15 @@ $ Please enter the external ip of the LND Node:
 > <some-ip-addr>
 ```
 
-After running the setup-wizard a file "lncli.sh" will generated in the project folder.
+4. After running the setup-wizard a file "lncli.sh" will generated in the project folder.
 
-Create an LND wallet, please note the CIPHER SEED that will be returned on the CLI.
+5. Create an LND wallet, please note the CIPHER SEED that will be returned on the CLI.
 PLEASE KEEP A NOTE OF IT SOMEWHERE SAFE.
 ```
 $ ./lncli.sh create
 ```
 
-Run LND commands
+6. Run LND commands
 
 ```
 $ ./lncli.sh getinfo
