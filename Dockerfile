@@ -8,7 +8,7 @@ WORKDIR /
 RUN apt-get update \
     && apt-get install make git gcc autoconf build-essential libtool autotools-dev automake pkg-config bsdmainutils python3 -y \
     && apt-get install libssl-dev libevent-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev libboost-thread-dev -y \
-    && apt-get install libminiupnpc-dev libzmq3-dev -y, vim -y \
+    && apt-get install libminiupnpc-dev libzmq3-dev -y vim -y \
     && git clone https://github.com/bitcoin/bitcoin 
 
 # Set Working Directory to make Bitcoin.
