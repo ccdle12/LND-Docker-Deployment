@@ -1,6 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Get the lightning chain environment.
+# Get the lightning chain environment from running `getinfo` using the lightning
+# node.
 testnet=""
 testnet=$(. lncli.sh getinfo | grep true)
 
